@@ -9,7 +9,7 @@ $occurenceDetails = [];
 
 for ($i = $min; $i <= $max; $i++) { 
     $numString  = strval($i);
-    $count      = substr_count($numString, '9');
+    $count      = substr_count($numString, "{$search}");
 
     if ($count) {
         $occurence += $count;
